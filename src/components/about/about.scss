@@ -1,6 +1,9 @@
 @import "../../resources/sass/_fonts";
 
 .about{
+    .about-title{
+        width: 10%;
+    }
     .about-content{
         position: relative;
         .about-content-paragraphs{
