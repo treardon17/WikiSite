@@ -1,0 +1,51 @@
+@import "../../resources/sass/_fonts";
+@import "../../resources/sass/_colors";
+
+.nav-bar{
+    text-align: right;
+
+    nav{
+        position: relative;
+        display: inline-block;
+
+        .nav-bar-highlighter{
+            position: absolute;
+            top: 2%; left: 0;
+            height: 5px;
+            border-radius: 10%;
+            background-color: $orange;
+            transition: 0.33s ease-in-out;
+        }
+
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 100%;
+            height: 2em;
+
+            >:last-child{
+                margin-right: 2em;
+            }
+
+            li{
+                display: inline-flex;
+                align-content: center;
+                justify-content: center;
+
+                a{
+                    padding: 1em;
+                    opacity: 0.4;
+                    text-decoration: none;
+                    color: white;
+                    font-family: $open-sans;
+                    transition: 0.2s ease-in-out;
+
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

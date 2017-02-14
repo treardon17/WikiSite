@@ -1,0 +1,43 @@
+@import '../../resources/sass/_colors';
+@import '../../resources/sass/_fonts';
+
+.contact-form{
+  height: 100vh;
+  display: flex;
+
+  .contact-form-background{
+    filter: brightness(0.5);
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-image: url('../../resources/images/gc-blue-river.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .contact-form-title{
+    display: inline-block;
+    flex: 1;
+    height: 100%;
+    color: white;
+  }
+  
+  .contact-form-content{
+    flex: 11;
+    height: 100%;
+    text-align: center;
+
+    .contact-form-form{
+      position: relative;
+      display: inline-block;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+
+      .fancy-text-box{
+        width: 100%;
+        height: 2em;
+      }
+    }
+  }
+}

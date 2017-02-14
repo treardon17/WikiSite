@@ -1,0 +1,9 @@
+include ../../components/rotated-title/rotated-title
+
+div(class="about parallax-container component")
+    div(class="about-title")
+        +rotated-title("About")
+    div(class="about-content component-content")
+        div(class="about-content-paragraphs")
+            for paragraph in about.content
+                p #{paragraph}

@@ -1,0 +1,10 @@
+include ../../util/include/include-script.pug
+
+mixin animate-title(firstLine, secondLine)
+    div(class="animate-title component")
+        +include-script("./resources/js/animate-title.js")
+        div(class="animate-title-content")
+            div(class="animate-titles")
+                h1(class="animate-title-1") #{firstLine}
+                h1(class="animate-title-2") #{secondLine}
+        

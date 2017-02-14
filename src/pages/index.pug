@@ -1,0 +1,14 @@
+extends ../layouts/page-layout
+include ../components/parallax-image/parallax-image
+include ../components/animate-title/animate-title
+
+block title
+    title Home: Grand Canyon
+
+block pre-content
+    +animate-title("Grand", "Canyon")
+
+block content
+    include ../components/splash/splash
+    include ../components/about/about
+    +parallax-image("./resources/images/gc-landscape.jpg")
