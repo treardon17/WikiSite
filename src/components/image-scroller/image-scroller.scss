@@ -1,0 +1,21 @@
+.image-scroller{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    .image-scroller-image-container{
+        position: relative;
+        flex: 1;
+        min-width: 33%;
+        padding-top: 50%;
+
+        .image-scroller-image{
+            top: 5px; bottom: 5px; left: 5px; right: 5px;
+            margin: auto;
+            position: absolute;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+}
