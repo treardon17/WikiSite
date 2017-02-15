@@ -1,8 +1,14 @@
 extends ../layouts/page-layout
+include ../components/splash/splash
+include ../components/animate-title/animate-title
+include ../components/medium-module/medium-module
 
 block title
     title Trips: Grand Canyon
 
 block pre-content
+    +animate-title("grand", "trips")
 
 block content
+    +splash('./resources/images/gc-river.jpg')
+    +medium-module('The adventure of a lifetime', 'go out and explore', 'https://www.nps.gov/grca/index.htm')
