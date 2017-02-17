@@ -1,9 +1,10 @@
 include ../../util/include/include-script
 +include-script("./resources/js/nav-bar.js")
+-var fileExtension = isPHP ? ".php" : ".html"
 div(class="nav-bar")
     nav
         div(class="nav-bar-highlighter")
         ul
             for item in navBar.menuItems
                 li
-                    a(href=item.url) #{item.title}
+                    a(href=item.url + fileExtension) #{item.title}
