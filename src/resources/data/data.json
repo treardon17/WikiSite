@@ -6,19 +6,19 @@
         "menuItems":[
             {
                 "title":"Home",
-                "url":"./index.php"
+                "url":"./index"
             },
             {
                 "title":"Gallery",
-                "url":"./gallery.php"
+                "url":"./gallery"
             },
             {
                 "title":"Trips",
-                "url":"./trips.php"
+                "url":"./trips"
             },
             {
                 "title":"Contact",
-                "url":"./contact.php"
+                "url":"./contact"
             }
         ]
     },

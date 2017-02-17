@@ -1,6 +1,8 @@
 @import "../../resources/sass/_fonts";
 
 .about{
+    display: flex;
+
     .about-title{
         width: 10%;
     }
@@ -9,9 +11,6 @@
         .about-content-paragraphs{
             padding-top: 1em;
             padding-bottom: 1em;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
             p{
                 line-height: 1.5em;
                 font-family: $roboto;

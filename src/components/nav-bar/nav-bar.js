@@ -29,7 +29,12 @@ class NavBar{
     getMenuItemForCurrentPage(){
         if(this.currentMenuItem === null){
             let currPath = document.location.pathname;
-            if(currPath === '/'){ currPath = 'index.php'; } //if it's just a slash, we want the home page
+            let pathPieces = currPath.split('/');
+            if(pathPieces.length == 0 || pathPieces[pathPieces.length - 1].search('index') !== -1){
+                currPath = 'index'; //if it's just a slash, we want the home page
+            }else{
+                currPath = pathPieces[pathPieces.length - 1];
+            }
 
             for(let i = 0; i < this.menuItems.length; i++){
                 const menuItemPath = $(this.menuItems[i]).attr('href');
