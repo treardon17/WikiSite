@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact: Grand Canyon</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="./resources/js/require.js"></script>
+    <script type="text/javascript">requirejs(["./resources/js/parallax.js"], function(){ })</script>
+    <script type="text/javascript">requirejs(["./resources/js/main.js"], function(){ })</script>
+    <link href="./resources/css/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+            <script type="text/javascript">requirejs(["./resources/js/nav-bar.js"], function(){ })</script>
+      <div class="nav-bar">
+        <nav>
+          <div class="nav-bar-highlighter"></div>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./trips.html">Trips</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="content">
+            <script type="text/javascript">requirejs(["./resources/js/fancy-text-box.js"], function(){ })</script>
+      <div class="contact-form parallax-container">
+        <div class="contact-form-background vignette"></div>
+        <div class="contact-form-title">
+                <div class="rotated-title">
+                  <div class="title-container">
+                    <h1 class="title-heading parallax-element">Contact</h1>
+                  </div>
+                </div>
+        </div>
+        <div class="contact-form-content">
+          <form class="contact-form-form" action="contact-form.php">
+                  <div class="fancy-text-box">
+                    <div class="fancy-text-box-content">
+                      <input class="fancy-text-box-input" type="text" name="first-name">
+                      <h4 class="fancy-text-box-placeholder">First Name</h4>
+                    </div>
+                  </div>
+                  <div class="fancy-text-box">
+                    <div class="fancy-text-box-content">
+                      <input class="fancy-text-box-input" type="text" name="last-name">
+                      <h4 class="fancy-text-box-placeholder">Last Name</h4>
+                    </div>
+                  </div>
+                  <div class="fancy-text-box">
+                    <div class="fancy-text-box-content">
+                      <input class="fancy-text-box-input" type="text" name="email">
+                      <h4 class="fancy-text-box-placeholder">Email</h4>
+                    </div>
+                  </div>
+                  <div class="fancy-text-area">
+                    <textarea class="fancy-text-area-input" name="message"></textarea>
+                  </div>
+            <input class="contact-form-submit" type="Submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

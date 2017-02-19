@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trips: Grand Canyon</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="./resources/js/require.js"></script>
+    <script type="text/javascript">requirejs(["./resources/js/parallax.js"], function(){ })</script>
+    <script type="text/javascript">requirejs(["./resources/js/main.js"], function(){ })</script>
+    <link href="./resources/css/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+            <script type="text/javascript">requirejs(["./resources/js/nav-bar.js"], function(){ })</script>
+      <div class="nav-bar">
+        <nav>
+          <div class="nav-bar-highlighter"></div>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./trips.html">Trips</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="animate-title component">
+            <script type="text/javascript">requirejs(["./resources/js/animate-title.js"], function(){ })</script>
+      <div class="animate-title-content">
+        <div class="animate-titles">
+          <h1 class="animate-title-1">grand</h1>
+          <h1 class="animate-title-2">trips</h1>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="splash parallax-container component">
+        <div class="splash-image vignette parallax-element" style="background-image: url(./resources/images/gc-river.jpg);"></div>
+      </div>
+      <div class="medium-module">
+        <div class="medium-module-content-container">
+          <h1 class="medium-module-title">The adventure of a lifetime</h1>
+          <h4 class="medium-module-subtitle">go out and explore</h4>
+        </div><a class="medium-module-arrow" href="https://www.nps.gov/grca/index.htm"></a>
+      </div>
+    </div>
+  </body>
+</html>

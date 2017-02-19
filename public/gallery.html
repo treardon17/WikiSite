@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gallery: Grand Canyon</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="./resources/js/require.js"></script>
+    <script type="text/javascript">requirejs(["./resources/js/parallax.js"], function(){ })</script>
+    <script type="text/javascript">requirejs(["./resources/js/main.js"], function(){ })</script>
+    <link href="./resources/css/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+            <script type="text/javascript">requirejs(["./resources/js/nav-bar.js"], function(){ })</script>
+      <div class="nav-bar">
+        <nav>
+          <div class="nav-bar-highlighter"></div>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./trips.html">Trips</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="content">
+            <script type="text/javascript">requirejs(["./resources/js/image-slider.js"], function(){ })</script>
+      <div class="image-slider parallax-container">
+        <div class="image-slider-slogan">
+                <div class="animate-title component">
+                        <script type="text/javascript">requirejs(["./resources/js/animate-title.js"], function(){ })</script>
+                  <div class="animate-title-content">
+                    <div class="animate-titles">
+                      <h1 class="animate-title-1">Grand</h1>
+                      <h1 class="animate-title-2">Gallery</h1>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div class="image-slider-content parallax-element">
+          <div class="image-slider-images"><a class="image-slider-image vignette" style="background-image: url('./resources/images/gc-landscape.jpg');"></a><a class="image-slider-image vignette" style="background-image: url('./resources/images/gc-river.jpg');"></a><a class="image-slider-image vignette" style="background-image: url('./resources/images/gc-sunset.jpg');"></a><a class="image-slider-image vignette" style="background-image: url('./resources/images/gc-swirl.jpg');"></a><a class="image-slider-image vignette" style="background-image: url('./resources/images/gc-blue-river.jpg');"></a><a class="image-slider-image vignette" style="background-image: url('./resources/images/gc-man.jpg');"></a>
+          </div>
+          <div class="image-slider-buttons"><a class="image-slider-button image-slider-button-left" href="#" style="background-image: url('./resources/images/image-slider/left-arrow.png');"></a><a class="image-slider-button image-slider-button-right" href="#" style="background-image: url('./resources/images/image-slider/right-arrow.png');"></a></div>
+          <div class="image-slider-indexes"><a class="image-slider-index" href="#" imageIndex="0"></a><a class="image-slider-index" href="#" imageIndex="1"></a><a class="image-slider-index" href="#" imageIndex="2"></a><a class="image-slider-index" href="#" imageIndex="3"></a><a class="image-slider-index" href="#" imageIndex="4"></a><a class="image-slider-index" href="#" imageIndex="5"></a>
+          </div>
+        </div>
+      </div>
+      <div class="image-scroller">
+        <div class="image-scroller-image-container">
+          <div class="image-scroller-image" style="background-image:url(./resources/images/gc-landscape.jpg);"></div>
+        </div>
+        <div class="image-scroller-image-container">
+          <div class="image-scroller-image" style="background-image:url(./resources/images/gc-river.jpg);"></div>
+        </div>
+        <div class="image-scroller-image-container">
+          <div class="image-scroller-image" style="background-image:url(./resources/images/gc-sunset.jpg);"></div>
+        </div>
+        <div class="image-scroller-image-container">
+          <div class="image-scroller-image" style="background-image:url(./resources/images/gc-swirl.jpg);"></div>
+        </div>
+        <div class="image-scroller-image-container">
+          <div class="image-scroller-image" style="background-image:url(./resources/images/gc-blue-river.jpg);"></div>
+        </div>
+        <div class="image-scroller-image-container">
+          <div class="image-scroller-image" style="background-image:url(./resources/images/gc-man.jpg);"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home: Grand Canyon</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="./resources/js/require.js"></script>
+    <script type="text/javascript">requirejs(["./resources/js/parallax.js"], function(){ })</script>
+    <script type="text/javascript">requirejs(["./resources/js/main.js"], function(){ })</script>
+    <link href="./resources/css/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+            <script type="text/javascript">requirejs(["./resources/js/nav-bar.js"], function(){ })</script>
+      <div class="nav-bar">
+        <nav>
+          <div class="nav-bar-highlighter"></div>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./trips.html">Trips</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="animate-title component">
+            <script type="text/javascript">requirejs(["./resources/js/animate-title.js"], function(){ })</script>
+      <div class="animate-title-content">
+        <div class="animate-titles">
+          <h1 class="animate-title-1">Grand</h1>
+          <h1 class="animate-title-2">Canyon</h1>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="splash parallax-container component">
+        <div class="splash-image vignette parallax-element" style="background-image: url(./resources/images/gc-man.jpg);"></div>
+      </div>
+      <div class="about parallax-container component">
+        <div class="about-title">
+                <div class="rotated-title">
+                  <div class="title-container">
+                    <h1 class="title-heading parallax-element">About</h1>
+                  </div>
+                </div>
+        </div>
+        <div class="about-content component-content">
+          <div class="about-content-paragraphs">
+            <p>The Grand Canyon (Hopi: Ongtupqa; Yavapai: Wi:kaʼi:la, Navajo: Tsékooh Hatsoh, Spanish: Gran Cañón) is a steep-sided canyon carved by the Colorado River in the state of Arizona in the United States. It is contained within and managed by Grand Canyon National Park, the Kaibab National Forest, Grand Canyon-Parashant National Monument, the Hualapai Tribal Nation, the Havasupai people and the Navajo Nation. President Theodore Roosevelt was a major proponent of preservation of the Grand Canyon area, and visited it on numerous occasions to hunt and enjoy the scenery.</p>
+            <p>The Grand Canyon is 277 miles (446 km) long, up to 18 miles (29 km) wide and attains a depth of over a mile (6,093 feet or 1,857 meters). Nearly two billion years of Earth's geological history have been exposed as the Colorado River and its tributaries cut their channels through layer after layer of rock while the Colorado Plateau was uplifted. While some aspects about the history of incision of the canyon are debated by geologists, several recent studies support the hypothesis that the Colorado River established its course through the area about 5 to 6 million years ago. Since that time, the Colorado River has driven the down-cutting of the tributaries and retreat of the cliffs, simultaneously deepening and widening the canyon.</p>
+            <p>For thousands of years, the area has been continuously inhabited by Native Americans, who built settlements within the canyon and its many caves. The Pueblo people considered the Grand Canyon a holy site, and made pilgrimages to it. The first European known to have viewed the Grand Canyon was García López de Cárdenas from Spain, who arrived in 1540.</p>
+          </div>
+        </div>
+      </div>
+      <div class="parallax-image parallax-container component">
+        <div class="parallax-image-background parallax-element" style="background-image: url(./resources/images/gc-landscape.jpg);"></div>
+      </div>
+    </div>
+  </body>
+</html>
