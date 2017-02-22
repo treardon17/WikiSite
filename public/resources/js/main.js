@@ -1,7 +1,7 @@
 'use strict';
 
 //Constants
-var loadingAnimationLength = 0;
+var loadingAnimationLength = 1;
 var scriptsLoaded = {};
 
 function fadeInHtml() {

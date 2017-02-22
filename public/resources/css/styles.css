@@ -19,6 +19,57 @@
         margin: 0.3em 5%; }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400");
+.contact-form {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .contact-form .contact-form-background {
+    -webkit-filter: brightness(0.5);
+            filter: brightness(0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../../resources/images/gc-blue-river.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .contact-form .contact-form-title {
+    display: inline-block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 100%;
+    width: 10%;
+    color: white; }
+  .contact-form .contact-form-content {
+    -webkit-box-flex: 11;
+    -webkit-flex: 11;
+        -ms-flex: 11;
+            flex: 11;
+    height: 100%;
+    text-align: center; }
+    .contact-form .contact-form-content > * {
+      opacity: 0.5; }
+    .contact-form .contact-form-content .contact-form-form {
+      position: relative;
+      display: inline-block;
+      top: 50%;
+      width: 50%;
+      min-width: 350px;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+      .contact-form .contact-form-content .contact-form-form .fancy-text-box, .contact-form .contact-form-content .contact-form-form .contact-form-message, .contact-form .contact-form-content .contact-form-form .contact-form-submit {
+        width: 100%;
+        height: 2em;
+        margin-bottom: 0.5em; }
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400");
 .animate-title {
   z-index: 1000;
   position: absolute;
@@ -71,57 +122,6 @@
           right: -300%; }
           .animate-title .animate-title-content .animate-titles h1.animate-title-2.animate-title-2-visible {
             right: 5%; }
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400");
-.contact-form {
-  height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  .contact-form .contact-form-background {
-    -webkit-filter: brightness(0.5);
-            filter: brightness(0.5);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: url("../../resources/images/gc-blue-river.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; }
-  .contact-form .contact-form-title {
-    display: inline-block;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    height: 100%;
-    width: 10%;
-    color: white; }
-  .contact-form .contact-form-content {
-    -webkit-box-flex: 11;
-    -webkit-flex: 11;
-        -ms-flex: 11;
-            flex: 11;
-    height: 100%;
-    text-align: center; }
-    .contact-form .contact-form-content > * {
-      opacity: 0.5; }
-    .contact-form .contact-form-content .contact-form-form {
-      position: relative;
-      display: inline-block;
-      top: 50%;
-      width: 50%;
-      min-width: 350px;
-      -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-              transform: translateY(-50%); }
-      .contact-form .contact-form-content .contact-form-form .fancy-text-box, .contact-form .contact-form-content .contact-form-form .contact-form-message, .contact-form .contact-form-content .contact-form-form .contact-form-submit {
-        width: 100%;
-        height: 2em;
-        margin-bottom: 0.5em; }
 
 .fancy-text-area .fancy-text-area-input {
   width: 100%;
@@ -359,48 +359,6 @@ header {
         opacity: 1; }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400");
-.medium-module {
-  position: relative;
-  width: 100%;
-  height: 10em;
-  font-family: "Open Sans", sans-serif; }
-  .medium-module .medium-module-arrow {
-    position: absolute;
-    height: 2em;
-    width: 2em;
-    top: 0;
-    bottom: 0;
-    right: 1em;
-    margin: auto;
-    background-image: url("../images/right-arrow.png");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    -webkit-filter: brightness(0);
-            filter: brightness(0);
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out; }
-    .medium-module .medium-module-arrow:hover {
-      -webkit-transform: scale(1.3);
-          -ms-transform: scale(1.3);
-              transform: scale(1.3); }
-  .medium-module .medium-module-content-container {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    margin-left: 1em; }
-    .medium-module .medium-module-content-container .medium-module-title {
-      text-transform: uppercase;
-      color: #AE3B19;
-      margin: 0; }
-    .medium-module .medium-module-content-container .medium-module-subtitle {
-      text-transform: lowercase;
-      color: black;
-      margin: 0; }
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400");
 .nav-bar {
   text-align: right; }
   .nav-bar nav {
@@ -447,20 +405,47 @@ header {
           .nav-bar nav ul li a:hover {
             opacity: 1; }
 
-.parallax-image {
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400");
+.medium-module {
   position: relative;
   width: 100%;
-  padding-top: 30%;
-  overflow: hidden; }
-  .parallax-image .parallax-image-background {
+  height: 10em;
+  font-family: "Open Sans", sans-serif; }
+  .medium-module .medium-module-arrow {
     position: absolute;
+    height: 2em;
+    width: 2em;
     top: 0;
-    right: 0;
     bottom: 0;
-    left: 0;
-    background-size: cover;
+    right: 1em;
+    margin: auto;
+    background-image: url("../images/right-arrow.png");
+    background-size: contain;
     background-position: center center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    -webkit-filter: brightness(0);
+            filter: brightness(0);
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out; }
+    .medium-module .medium-module-arrow:hover {
+      -webkit-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+              transform: scale(1.3); }
+  .medium-module .medium-module-content-container {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin-left: 1em; }
+    .medium-module .medium-module-content-container .medium-module-title {
+      text-transform: uppercase;
+      color: #AE3B19;
+      margin: 0; }
+    .medium-module .medium-module-content-container .medium-module-subtitle {
+      text-transform: lowercase;
+      color: black;
+      margin: 0; }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400");
 .rotated-title {
@@ -487,6 +472,21 @@ header {
               transform: rotate(-90deg);
       margin: auto;
       letter-spacing: 0.3em; }
+
+.parallax-image {
+  position: relative;
+  width: 100%;
+  padding-top: 30%;
+  overflow: hidden; }
+  .parallax-image .parallax-image-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
 
 .splash {
   height: 100vh;

@@ -1,5 +1,5 @@
 //Constants
-const loadingAnimationLength = 0;
+const loadingAnimationLength = 1;
 let scriptsLoaded = {};
 
 function fadeInHtml(){
